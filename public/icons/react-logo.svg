@@ -1,0 +1,13 @@
+<!-- react.svg -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" fill="none">
+  <g transform="translate(128 128)" stroke="#61DAFB" stroke-width="12">
+    <circle r="16" fill="#61DAFB"></circle>
+    <ellipse rx="90" ry="35"></ellipse>
+    <g transform="rotate(60)">
+      <ellipse rx="90" ry="35"></ellipse>
+    </g>
+    <g transform="rotate(-60)">
+      <ellipse rx="90" ry="35"></ellipse>
+    </g>
+  </g>
+</svg>
