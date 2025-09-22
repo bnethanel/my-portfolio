@@ -3,18 +3,22 @@ import ProjectCard from './ProjectCard'
 
 const projects = [
     {
-        title:"Stupify",
+        title: "Stupify",
         name: "Stupify",
         src: "/images/stupify-logo.png",
-        description: 'As part of a three-person team, I co-developed Stupify, a full-stack Spotify-inspired music streaming web application built entirely from scratch. My responsibilities included implementing frontend components, handling API integration, and contributing to the overall architecture and UI/UX design. We worked under tight deadlines and emphasized collaboration, scalability, and performance throughout the project lifecycle.',
+        description: 'As part of a three-person team, I co-developed Stupify, a full-stack Spotify-inspired music app built from scratch. I contributed to both frontend and backend, implementing UI components, core logic, and API integrations, while designing the architecture and UI/UX with a focus on scalability and performance.',
         shortDescription: 'Fullstack app built with React',
+        projectLink: null,
+        githubLink: null,
     },
     {
-        title:"My portfolio",
+        title: "My portfolio",
         name: "My-logo",
         src: "/images/next-logo.png",
-        description: 'A modern single-page website built with Next.js and Tailwind CSS, designed for speed, responsiveness, and clean user experience. The site showcases smooth navigation, scalable components, and a minimalist aesthetic, making it both performant and easy to maintain.',
+        description: 'A modern single-page website built with Next.js and Tailwind, designed for speed, responsiveness, and clean user experience. The site showcases smooth navigation, scalable components, and a minimalist aesthetic, making it both performant and easy to maintain.',
         shortDescription: 'Website built with Next.js and Tailwind',
+        projectLink: null,
+        githubLink: null,
     },
 ]
 
@@ -27,7 +31,15 @@ export function Projects() {
             <p className='text-gray-500 text-xl'>Some of the applications I’ve built, highlighting my skills across different technologies.</p>
             <div className='projects flex gap-5 mt-20'>
                 {projects.map((item) => (
-                    <ProjectCard key={item.name} name={item.name} src={item.src} description={item.description} title={item.title} shortDescription={item.shortDescription} />
+                    <ProjectCard
+                        key={item.name}
+                        name={item.name}
+                        src={item.src}
+                        description={item.description}
+                        title={item.title}
+                        shortDescription={item.shortDescription}
+                        projectLink={item.projectLink}
+                        githubLink={item.githubLink} />
                 ))}
             </div>
         </div>
