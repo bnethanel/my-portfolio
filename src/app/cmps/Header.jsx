@@ -15,9 +15,9 @@ export function Header() {
                         priority />
                 </Link>
                 <nav className="flex gap-4 text-m">
-                    <Link href="/home" className="hover:underline">Home</Link>
-                    <Link href="/about" className="hover:underline">About</Link>
-                    <Link href="/projects" className="hover:underline">Projects</Link>
+                    <Link href="#home" className="hover:underline">Home</Link>
+                    <Link href="#about" className="hover:underline">About</Link>
+                    <Link href="#projects" className="hover:underline">Projects</Link>
                     <Link href="/contact" className="hover:underline">Contact</Link>
                 </nav>
             </div>

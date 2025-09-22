@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 
-export default function ProjectCard({ name, src, description, title, shortDescription, githubLink, projectLink }) {
+export default function ProjectCard({ name, src, description, shortDescription, githubLink, projectLink }) {
     return (
         <div
             className="group relative w-full h-full overflow-hidden 
@@ -36,7 +36,7 @@ export default function ProjectCard({ name, src, description, title, shortDescri
                 <div className="w-10/12 max-w-md bg-white/95 rounded-lg shadow p-5 text-gray-900">
                     <div className="flex items-center justify-between">
                         <div className="project-info">
-                            <h2 className="text-lg font-semibold">{title}</h2>
+                            <h2 className="text-lg font-semibold">{name}</h2>
                             <p className="text-sm text-gray-600">{shortDescription}</p>
                         </div>
                         <div className='project-links flex gap-5'>
