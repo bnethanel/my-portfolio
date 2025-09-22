@@ -33,12 +33,12 @@ export function Contact() {
     };
 
     return (
-        <div className="max-w-6xl mx-auto w-full px-6 py-12 scroll-mt-20">
-            <div className="mx-auto w-full max-w-xl rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
-                <h2 className="text-2xl font-semibold tracking-tight">Contact</h2>
-                <p className="mt-1 text-sm text-gray-600">I’ll get back to you shortly.</p>
-
-                <form onSubmit={onSubmit} className="mt-6 space-y-5">
+        <div id="contact" className="max-w-6xl mx-auto w-full px-6 py-12 scroll-mt-20">
+            <h1 className='text-5xl text-start text-gray-700 font-bold mb-15'>
+                <span className='underline underline-offset-15 decoration-blue-500'>Con</span>tact Me
+            </h1>
+            <div className="mx-auto w-full max-w-2xl rounded-2xl border border-gray-200 bg-white p-6 md:p-8 shadow-sm">
+                <form onSubmit={onSubmit} className="space-y-5">
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                         <div className="flex flex-col">
                             <label htmlFor="name" className="text-sm font-medium text-gray-700">Name</label>

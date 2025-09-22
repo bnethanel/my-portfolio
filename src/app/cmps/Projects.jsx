@@ -22,7 +22,7 @@ const projects = [
 
 export function Projects() {
     return (
-        <div id='projects' className='max-w-6xl mx-auto px-6 py-6 flex flex-col w-full scroll-mt-20 min-h-[80vh]'>
+        <div id='projects' className='max-w-6xl mx-auto px-6 py-6 flex flex-col w-full scroll-mt-20 min-h-[70vh]'>
             <h1 className='text-5xl text-start text-gray-700 font-bold mb-10'>
                 <span className='underline underline-offset-15 decoration-blue-500'>Pro</span>jects
             </h1>
