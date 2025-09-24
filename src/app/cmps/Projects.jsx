@@ -22,12 +22,12 @@ const projects = [
 
 export function Projects() {
     return (
-        <div id='projects' className='max-w-6xl mx-auto px-6 py-6 flex flex-col w-full scroll-mt-20 min-h-[70vh]'>
-            <h1 className='text-5xl text-start text-gray-700 font-bold mb-10'>
+        <div id='projects' className='max-w-6xl mx-auto px-6 py-6 flex flex-col w-full scroll-mt-20 min-h-[70vh] max-md:mt-10'>
+            <h1 className='text-5xl text-start text-gray-700 font-bold mb-10 max-md:text-center'>
                 <span className='underline underline-offset-15 decoration-blue-500'>Pro</span>jects
             </h1>
-            <p className='text-gray-500 text-xl'>Some of the applications I’ve built, highlighting my skills across different technologies.</p>
-            <div className='projects flex gap-5 mt-20'>
+            <p className='text-gray-500 text-xl max-md:text-center'>Some of the applications I’ve built, highlighting my skills across different technologies.</p>
+            <div className='projects flex gap-5 mt-20 max-lg:flex-col'>
                 {projects.map((item) => (
                     <ProjectCard
                         key={item.name}

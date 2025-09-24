@@ -31,7 +31,8 @@ export default function ProjectCard({ name, src, description, shortDescription, 
                 className="absolute inset-0 z-20 flex justify-center items-end mb-3
                    opacity-0 translate-y-30 
                    transition duration-500 overflow-hidden
-                   group-hover:opacity-100 group-hover:translate-y-0"
+                   group-hover:opacity-100 group-hover:translate-y-0 
+                   max-md:opacity-100 max-md:translate-y-0 "
             >
                 <div className="w-10/12 max-w-md bg-white/95 rounded-lg shadow p-5 text-gray-900">
                     <div className="flex items-center justify-between">

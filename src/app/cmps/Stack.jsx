@@ -16,7 +16,7 @@ const tech = [
 
 export function Stack() {
     return (
-        <div className="flex gap-4 mt-15">
+        <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-7 justify-items-center lg:grid-cols-10 gap-4 mt-15 ">
             {tech.map((item) => (
                 <StackCard key={item.name} name={item.name} src={item.src} />
             ))}

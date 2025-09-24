@@ -11,7 +11,7 @@ export function Footer() {
                 height={60}
                 className="mb-5"
             />
-            <div className='border-t border-gray-400 w-full flex items-center py-8 text-lg justify-between'>
+            <div className='border-t border-gray-400 w-full flex items-center py-8 text-lg justify-between max-md:flex-col max-md:gap-3'>
                 <p>© Nate Buz. All rights reserved.</p>
                 <div className='flex gap-6'>
                     <a href='https://github.com/bnethanel' title='Github link' >

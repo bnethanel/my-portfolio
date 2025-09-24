@@ -7,15 +7,17 @@ const developer = {
 };
 export function Top() {
     return (
-        <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between min-h-screen">
-            <div className='flex flex-col items-start'>
+        <div className="max-w-6xl mx-auto px-6 py-6 flex items-center gap-30 min-h-screen 
+        max-md:flex-col max-md:items-center max-md:gap-20 max-md:pt-30">
+            <div className='flex flex-col items-start
+                            max-md:items-center'>
                 <h2 className={`text-2xl mb-5 text-blue-600 `}>Hello! I'm</h2>
                 <h1 className={`text-6xl font-bold text-gray-700`}>Nate <span className='text-blue-500 underline decoration-4 decoration-blue-200 underline-offset-5'>Buz</span></h1>
-                <p className='mt-5 font-light text-3xl'>Fullstack / Front End Developer</p>
-                <p className='mt-5 text-1xl'>Designing and developing elegant web solutions that leave a lasting impression.</p>
+                <p className='mt-5 font-light text-3xl max-md:text-center max-sm:text-2xl'>Fullstack / Front End Developer</p>
+                <p className='mt-5 text-1xl max-md:text-center'>Designing and developing elegant web solutions that leave a lasting impression.</p>
                 <a className='px-10 py-3 border rounded-full border-gray-500 flex items-center mt-10'>My Resume</a>
             </div>
-            <div className='bg-white border border-gray-200 p-6 rounded-2xl shadow w-110 hover:shadow-xl hover:-translate-y-1 duration-300'>
+            <div className='bg-white border border-gray-200 p-6 rounded-2xl shadow w-110 hover:shadow-xl hover:-translate-y-1 duration-300 max-sm:text-sm max-sm:max-w-90'>
                 <div className='code-block-header flex justify-between mb-6'>
                     <div className='flex flex-row items-center gap-2'>
                         <div className='w-3 h-3 rounded-full bg-red-500 transition-transform duration-200 ease-in-out hover:scale-120'></div>
@@ -68,10 +70,7 @@ export function Top() {
                         <span className='text-gray-500'>{';'}</span>
                     </div>
                 </div>
-
             </div>
-
-
         </div>
     )
 }
