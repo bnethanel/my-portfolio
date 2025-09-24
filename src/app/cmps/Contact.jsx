@@ -93,7 +93,6 @@ export function Contact() {
                             >
                                 Submit
                             </button>
-
                             <span className="text-sm text-gray-600">{result}</span>
                         </div>
                     </form>
