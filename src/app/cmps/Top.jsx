@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import Reveal from './Reveal';
 export function Top() {
     return (
@@ -13,7 +14,19 @@ export function Top() {
                     <p className='mt-5 font-light text-3xl max-md:text-center max-sm:text-2xl'>Fullstack / Front End Developer</p>
                     <p className='mt-5 text-1xl max-md:text-center'>Designing and developing elegant web solutions that leave a lasting impression.</p>
                 </Reveal>
-                <Reveal delay={400} once={false}><a className='px-10 py-3 border rounded-full border-gray-500 flex items-center mt-10'>My Resume</a></Reveal>
+                <Reveal delay={400} once={false}>
+                    <a className='px-6 py-3 border rounded-full border-gray-500 flex items-center gap-2 mt-10 cursor-pointer hover:scale-105 transition duration-100'
+                        href="\my-info\NethanelBuznahResume(2).pdf"
+                        download="Nethanel-Buznah-Resume.pdf">
+                        My Resume
+                        <Image
+                            src="/icons/download-logo.svg"
+                            alt="download logo"
+                            width={20}
+                            height={20}
+                        />
+                    </a>
+                </Reveal>
             </div>
             <Reveal delay={600} once={false}>
                 <div className='bg-white border border-gray-200 p-6 rounded-2xl shadow w-md hover:shadow-xl hover:-translate-y-1 duration-300 max-sm:text-sm max-lg:w-full'>
