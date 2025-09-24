@@ -2,7 +2,6 @@ import React from 'react'
 import Reveal from './Reveal';
 export function Top() {
     return (
-
         <div className="max-w-6xl mx-auto px-6 py-6 flex items-center gap-30 min-h-screen 
         max-md:flex-col max-md:items-center max-md:gap-20 max-md:pt-30">
 
@@ -17,7 +16,7 @@ export function Top() {
                 <Reveal delay={400} once={false}><a className='px-10 py-3 border rounded-full border-gray-500 flex items-center mt-10'>My Resume</a></Reveal>
             </div>
             <Reveal delay={600} once={false}>
-                <div className='bg-white border border-gray-200 p-6 rounded-2xl shadow w-110 hover:shadow-xl hover:-translate-y-1 duration-300 max-sm:text-sm max-sm:max-w-90'>
+                <div className='bg-white border border-gray-200 p-6 rounded-2xl shadow w-md hover:shadow-xl hover:-translate-y-1 duration-300 max-sm:text-sm max-lg:w-full'>
                     <div className='code-block-header flex justify-between mb-6'>
                         <div className='flex flex-row items-center gap-2'>
                             <div className='w-3 h-3 rounded-full bg-red-500 transition-transform duration-200 ease-in-out hover:scale-120'></div>

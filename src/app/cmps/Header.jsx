@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function Header() {
     return (
-        <header className="fixed top-0 inset-x-0 z-50 backdrop-blur border-b border-gray-200 px-20">
+        <header className="fixed top-0 inset-x-0 z-50 backdrop-blur border-b border-gray-200 px-20 max-md:px-5">
             <div className='mx-auto w-full px-6 h-20 flex items-center justify-between'>
                 <Link href="/">
                     <Image
